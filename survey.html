@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>Dishonored</title>
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="main.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Antic Slab&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <img src="images/logo3.png" alt="Dishonored logo" title="Dishonored logo" style="max-width:50%;margin:auto;display:block;">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div id="wrapper">
+            <h1>Survey</h1>
+            <p>We would like to get information from our players about their playstyle and their opinions. Please fill out the survey below to have your results tallied.</p>
+            <form>
+                <h2>Information</h2>
+                <div class="line">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname"/>
+                </div>
+
+                <div class="line">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname"/>
+                </div>
+
+                <div class="line">
+                <label for="email">Email:</label>
+                <input type="email" id="email"/>
+                </div>
+
+                <h2>The Game</h2>
+                <div class="line">
+                <label for="games-played">Games Played:</label><br/>
+                <input type="checkbox" name="games-played" id="d1"/><label for="d1">Dishonored</label><br/>
+                <input type="checkbox" name="games-played" id="kof"/><label for="kof">Knife of Dunwall (DLC)</label><br/>
+                <input type="checkbox" name="games-played" id="tbw"/><label for="tbw">The Brigmore Witches (DLC)</label><br/>
+                <input type="checkbox" name="games-played" id="d2"/><label for="d2">Dishonored 2</label><br/>
+                <input type="checkbox" name="games-played" id="doto"><label for="doto">Death of the Outsider</label>
+                </div>
+
+                <div class="line">
+                <label for="favorite-game">Favorite Game:</label><br/>
+                <select id="favorite-game">
+                    <option value="fav-d1" id="fav-d1">Dishonored</option>
+                    <option value="fav-d2" id="fav-d2">Dishonored 2</option>
+                    <option value="fav-doto" id="fav-doto">Death of the Outsider</option>
+                </select>
+                </div>
+
+                <div class="line">
+                <label for="fav-mission">Favorite Mission</label><br/>
+                <select id="fav-mission">
+                    <!-- to be filled by javascript based on fave game selected -->
+                </select>
+                </div>
+
+                <h2>Playstyle</h2>
+                <div class="line">
+                <label for="approach">Approach?</label>
+                <input type="radio" id="open" name="approach"/><label for="open">Open</label>
+                <input type="radio" id="stealth" name="approach"/><label for="stealth">Stealth</label>
+                </div>
+
+                <div class="line">
+                <label for="mercy">Mercy?</label>
+                <input type="radio" id="no-mercy" name="mercy"/><label for="no-mercy">No Mercy</label>
+                <input type="radio" id="merciful" name="mercy"/><label for="merciful">Merciful</label>
+                </div>
+
+                <div class="line">
+                <label for="chaos">Chaos Level?</label>
+                <input type="radio" id="high" name="chaos"/><label for="high">High</label>
+                <input type="radio" id="low" name="chaos"/><label for="low">Low</label>
+                </div>
+
+                <h2>Comments</h2>
+                <div class="line">
+                <textarea cols="60" rows="10" placeholder="Any comments?"></textarea>
+                </div>
+
+                <div class="line">
+                <input type="submit" id="submit" name="submit" value="Submit"/>
+                <input type="reset" id="reset" name="reset" value="Reset"/>
+                </div>
+            </form>
+            
+        </div>
+
+        <footer>
+            <p>Copyright &copy; Jessica Hoyer Feb 2021</p>
+        </footer>
+        
+    <script src="surveyjs.js"></script>
+    </body>
+</html>

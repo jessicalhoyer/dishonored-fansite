@@ -1,0 +1,101 @@
+/* main elements */
+
+body {
+    background-color:#060d05;
+    color:#eee;
+    font-size:0.9em;
+    background-image:url("images/bg.jpg");
+    background-repeat:no-repeat;
+    font-family:'Noto Sans', helvetica, sans-serif;
+    background-attachment:fixed;
+}
+
+a {
+    text-decoration:none;
+    color:#c2deb6;
+
+    transition: all 0.7s ease-out;
+}
+
+a:hover {
+    color:#fff;
+}
+
+footer {
+    margin:auto;
+    max-width:70%;
+}
+
+footer p {
+    text-align:center;
+}
+
+.center {
+    text-align:center;
+}
+
+table {
+    border:1px solid #333;
+    margin:auto;
+}
+
+td {
+    border:1px solid #333;
+    border-collapse:collapse;
+    padding:0.5em;
+}
+
+/* main containers */
+
+#wrapper {
+    background-color:rgba(25,38,29, 0.7);
+    margin:auto;
+    max-width:70%;
+    padding:2em;
+}
+
+/* navigation menu */
+
+nav {
+    max-width:70%;
+    margin:auto;
+}
+
+li {
+    display:inline;
+}
+
+ul li a {
+    background-color:rgba(25,38,29,0.6);
+    padding:0.3em;
+}
+
+/* form elements */
+
+.line {
+    display:block;
+    margin:0.5em;
+}
+
+input, select, textarea {
+    background-color:#9ca8a6;
+    border:none;
+    padding:0.3em;
+}
+
+
+/* text styles */
+
+h1 {
+    font-family:'Antic Slab', serif;
+    font-weight:normal;
+}
+
+h2 {
+    font-family:'Antic Slab', serif;
+    font-weight:normal;
+}
+
+p {
+    text-align:justify;
+}

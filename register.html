@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>Dishonored</title>
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="main.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Antic Slab&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <img src="images/logo3.png" alt="Dishonored logo" title="Dishonored logo" style="max-width:50%;margin:auto;display:block;">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div id="wrapper">
+            <h1>Register</h1>
+            <p>Register here to sign up for our newsletter! We send out updates about the game periodically so you can stay up to date about everything happening.</p>
+
+            <form>
+                <h2>Information</h2>
+                <div class="line">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname"/>
+                </div>
+
+                <div class="line">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname"/>
+                </div>
+
+                <div class="line">
+                <label for="email">Email:</label>
+                <input type="email" id="email"/>
+                </div>
+
+                <h2>Comments</h2>
+                <div class="line">
+                <textarea cols="60" rows="10" placeholder="Any comments?"></textarea>
+                </div>
+
+                <div class="line">
+                <input type="submit" id="submit" name="submit" value="Submit"/>
+                <input type="reset" id="reset" name="reset" value="Reset"/>
+                </div>
+            </form>
+            
+        </div>
+
+        <footer>
+            <p>Copyright &copy; Jessica Hoyer Feb 2021</p>
+        </footer>
+
+        
+    <script src="registerjs.js"></script>
+    </body>
+</html>
